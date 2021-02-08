@@ -1,4 +1,4 @@
-html{
+#body{
     color: white;
     background-color: #1a1d21;
 
@@ -11,7 +11,7 @@ html{
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box; 
-    text-align: center;
+    text-align: center;;
 }
 
 .title {
@@ -53,6 +53,14 @@ input {
 
 input.inputNumber {
     width: 60px;
+}
+
+#team1input {
+    background-color: #174d4d;
+}
+
+#team2input {
+    background-color: #552525;
 }
 
 .hint {
@@ -134,4 +142,18 @@ button {
     height: 80px;
     margin-left: 50px;
     margin-right: 50px;
+}
+
+.settings {
+    float: left;
+    box-sizing: border-box;
+    width:100%;
+
+    margin-top: 100px;
+
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    border: 1px solid white;
+    background-color: #30353b;
 }

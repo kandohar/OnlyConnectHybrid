@@ -24,6 +24,8 @@ function StopChronoClicked() {
 function SecondPassed() {
     milliseconds += interval;
 
+    var maxTime = timePerQuestionInput.value * 1000;
+
     var percent = (milliseconds / maxTime) * 100;
 
     progress.style.width = percent + "%";
@@ -86,6 +88,8 @@ function NextQuestionClicked() {
         stopChronoButton.disabled = true;
         showAnswerButton.disabled = true;
         nextQuestionButton.disabled = true;
+
+        body.style.backgroundColor = "#ffa929";
     } else {
 
         var randomQuestionIndex = Math.floor(Math.random() * remainingQuestions);
@@ -110,13 +114,23 @@ function NextQuestionClicked() {
 
         nextQuestionButton.disabled = true;
         startChronoButton.disabled = false;
+
+        if (firstTeam) {
+            body.style.backgroundColor = "#174d4d";
+        } else {
+            body.style.backgroundColor = "#552525";
+        }
+
+        firstTeam = !firstTeam;
     }
 
     remaining.innerHTML = remainingQuestions + " questions";
 }
 
 
-// variables
+// DOM variables
+var body = document.getElementById("body");
+
 var team1Score = document.getElementById("team1");
 var team2Score = document.getElementById("team2");
 
@@ -152,14 +166,16 @@ showAnswerButton.disabled = true;
 var nextQuestionButton = document.getElementById("NextQuestion");
 nextQuestionButton.onclick = function () { NextQuestionClicked() };
 
+var timePerQuestionInput = document.getElementById("timePerQuestion");
+
+// Global variables
 var hint = 0;
 
 var milliseconds = 0;
 
-// 20 secondes
-const maxTime = 20 * 1000;
-
 const interval = (1 / 60) * 1000;
+
+var firstTeam = true;
 
 // data
 var data = [
@@ -210,7 +226,7 @@ var data = [
         "hint2": "The Legend of Zelda: Breath of the Wild",
         "hint3": "God of War",
         "hint4": "Sekiro: Shadows Die Twice",
-        "answer": "The Game Awards winners"
+        "answer": "The Game Awards winners - GOTY"
     },
     {
         "hint1": "Fish",
@@ -336,13 +352,13 @@ var data = [
         "hint2": "La Vénus de Milo",
         "hint3": "La Liberté guidant le peuple",
         "hint4": "Les taureaux ailés",
-        "answer": "Oeuvres du Louvre"
+        "answer": "Oeuvres au Louvre"
     },
     {
-        "hint1": "Caïn et Abel",
-        "hint2": "Michael Corleone et Fredo",
-        "hint3": "T'Chaka et N'Joby",
-        "hint4": "Scar et Mufasa",
+        "hint1": "Abel",
+        "hint2": "Fredo",
+        "hint3": "N'Jobu",
+        "hint4": "Mufasa",
         "answer": "Fratricide"
     },
     {
@@ -381,11 +397,18 @@ var data = [
         "answer": "Logiciels développés par Inria"
     },
     {
-        "hint1": "OCaml",
-        "hint2": "Pharo",
-        "hint3": "TousAntiCovid",
-        "hint4": "SOFA",
-        "answer": "Logiciels développés par Inria"
+        "hint1": "Prophase",
+        "hint2": "Métaphase",
+        "hint3": "Anaphase",
+        "hint4": "Télophase ",
+        "answer": "Mitose"
+    },
+    {
+        "hint1": "Adénine",
+        "hint2": "Cytosine",
+        "hint3": "Guanine",
+        "hint4": "Thymine ",
+        "answer": "Basé nucléique de l'ADN"
     }
     // nombres de papiers à IEEE VR chaque année ? (avec le 5 de Ferran) ??
     // 

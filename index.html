@@ -20,19 +20,21 @@
 
 </head>
 
-<body>
+<body id="body">
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
     <div class="title">4 WORDS - 1 CONNECTION</div>
     <div class="scores">
-      Team <input>&nbsp;:&nbsp;<span id="team1"><input class="inputNumber" type="number" value="0" min="0"></span>
+      Team <input id="team1input">&nbsp;:&nbsp;<span id="team1"><input class="inputNumber" type="number" value="0"
+          min="0"></span>
       points
       <span class="separator"></span>
       <span id="remaining">2 questions</span>
       <span class="separator"></span>
-      Team <input>&nbsp;:&nbsp;<span id="team2"><input class="inputNumber" type="number" value="0" min="0"></span>
+      Team <input id="team2input">&nbsp;:&nbsp;<span id="team2"><input class="inputNumber" type="number" value="0"
+          min="0"></span>
       points
     </div>
     <div class="question">
@@ -52,6 +54,9 @@
       <button id="StopChrono">Stop</button>
       <button id="ShowAnswer">Show answer</button>
       <button id="NextQuestion">Next question</button>
+    </div>
+    <div class="settings">
+      Time per question: <input id="timePerQuestion" type="number" value="20" min="0">
     </div>
   </div>
 
