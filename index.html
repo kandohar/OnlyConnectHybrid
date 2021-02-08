@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>4 WORDS - 1 CONNECTION</title>
+  <meta name="description" content="inspired by Only Connect">
+  <meta name="author" content="Adrien Reuzeau">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <div class="title">4 WORDS - 1 CONNECTION</div>
+    <div class="scores">
+      Team <input>&nbsp;:&nbsp;<span id="team1"><input class="inputNumber" type="number" value="0" min="0"></span>
+      points
+      <span class="separator"></span>
+      <span id="remaining">2 questions</span>
+      <span class="separator"></span>
+      Team <input>&nbsp;:&nbsp;<span id="team2"><input class="inputNumber" type="number" value="0" min="0"></span>
+      points
+    </div>
+    <div class="question">
+      <div class="hint" id="hint1">word 1</div>
+      <div class="hint" id="hint2">word 2</div>
+      <div class="hint" id="hint3">word 3</div>
+      <div class="hint" id="hint4">word 4</div>
+    </div>
+    <div id="timer">
+      <span id="points">5 points</span>
+      <div id="bar"></div>
+    </div>
+    <div id="answer">connection</div>
+    <div class="actions">
+      <button id="StartChrono">Start</button>
+      <button id="NextHint">Next hint</button>
+      <button id="StopChrono">Stop</button>
+      <button id="ShowAnswer">Show answer</button>
+      <button id="NextQuestion">Next question</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+  <!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+
+</html>

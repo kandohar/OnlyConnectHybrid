@@ -1,0 +1,137 @@
+html{
+    color: white;
+    background-color: #1a1d21;
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box; 
+    text-align: center;
+}
+
+.title {
+    margin-top: 40px;
+    text-align:center;
+
+    font-size:xx-large;
+}
+
+.scores {
+    float: left;
+
+    box-sizing: border-box;
+    width: 100%;
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    margin-top: 40px;
+
+    border: 1px solid white;
+    background-color: #30353b;
+
+    font-size:xx-large;
+}
+
+.separator {
+    margin-right: 100px;
+}
+
+input {
+    height: 40px;
+    text-align: center;
+    font-size: x-large;
+
+    color: white;
+    background-color: #30353b;
+}
+
+input.inputNumber {
+    width: 60px;
+}
+
+.hint {
+    float: left;
+
+    box-sizing: border-box;
+    width: 25%;
+
+    margin-top: 20px;
+
+    padding-top: 150px;
+    padding-bottom: 150px;
+
+    border: 1px solid white;
+    background-color: #30353b;
+
+    font-size:xx-large;
+}
+
+#timer {
+    float: left;
+
+    box-sizing: border-box;
+    width: 100%;
+    height: 60px;
+
+    margin-top: 20px;
+
+    border: 1px solid white;
+    background-color: #30353b;
+}
+
+#bar{
+    width:21%;
+    height: 100%;
+    background-color: red;
+}
+
+#points{
+    position: absolute;
+    font-size:xx-large;
+    transform: translate(-50%, -50%);
+    padding-top: 50px;
+}
+
+#answer {
+    float: left;
+    box-sizing: border-box;
+    width:100%;
+
+    margin-top: 20px;
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    border: 1px solid white;
+    background-color: #30353b;
+
+    font-size:xx-large;
+    font-weight: bold;
+}
+
+.actions {
+    float: left;
+    box-sizing: border-box;
+    width:100%;
+
+    margin-top: 20px;
+
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    border: 1px solid white;
+    background-color: #30353b;
+}
+
+button {
+    width: 180px;
+    height: 80px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
