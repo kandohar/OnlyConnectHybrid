@@ -214,27 +214,27 @@ var data = [
         "hint4": "Lune",
         "answer": "Les aventures de Tintin"
     },
-    {
+    /*{// A REVOIR
         "hint1": "Resurrection",
         "hint2": "Revolutions",
         "hint3": "Reloaded",
         "hint4": "-",
         "answer": "Matrix"
-    },
-    {
+    },*/
+    /*{// A REVOIR
         "hint1": "The Last of Us Part II",
         "hint2": "The Legend of Zelda: Breath of the Wild",
         "hint3": "God of War",
         "hint4": "Sekiro: Shadows Die Twice",
         "answer": "The Game Awards winners - GOTY"
-    },
-    {
+    },*/
+    /*{// A REVOIR
         "hint1": "Fish",
         "hint2": "Wisp",
         "hint3": "Bulky",
         "hint4": "Radio",
         "answer": "Official Inktober 2020 prompt list"
-    },
+    },*/
     /*{
         "hint1": "Vue",
         "hint2": "Toucher",
@@ -242,7 +242,7 @@ var data = [
         "hint4": "Odorat",
         "answer": "Sens"
     },*/
-    {
+    {// A REVOIR
         "hint1": "Parasite",
         "hint2": "Green Book : Sur les routes du sud",
         "hint3": "La Forme de l'eau",
@@ -256,20 +256,20 @@ var data = [
         "hint4": "de terre",
         "answer": "Pomme"
     },
-    {
+    /*{// A REVOIR
         "hint1": "Europe",
         "hint2": "Io",
         "hint3": "Ganymède",
         "hint4": "Callisto",
         "answer": "Lunes de Jupiter"
-    },
-    {
+    },*/
+    /*{// A REVOIR
         "hint1": "79",
         "hint2": "83",
         "hint3": "89",
         "hint4": "97",
         "answer": "Derniers nombres premiers avant 100"
-    },
+    },*/
     {
         "hint1": "Tokyo",
         "hint2": "Rio de Janeiro",
@@ -298,40 +298,40 @@ var data = [
         "hint4": "Amy Winehouse",
         "answer": "Club des 27"
     },
-    {
+    /*{// A REVOIR
         "hint1": "Rouge et Bleu",
         "hint2": "Or et Argent",
         "hint3": "Rubis et Saphir",
         "hint4": "Diamant et Perle",
         "answer": "Pokémon"
-    },
+    },*/
     {
         "hint1": "vais",
         "hint2": "regard",
         "hint3": "lieu",
         "hint4": "frère",
-        "answer": "Beau..."
+        "answer": "Beau___"
     },
     {
         "hint1": "Henry",
         "hint2": "Roland",
         "hint3": "Gaugry",
         "hint4": "Ardisson",
-        "answer": "Thierry _"
+        "answer": "Thierry ___"
     },
     {
         "hint1": "Hallyday",
         "hint2": "Bowie",
         "hint3": "Lynch",
         "hint4": "Guetta",
-        "answer": "David _"
+        "answer": "David ___"
     },
     {
         "hint1": "Pie",
         "hint2": "Sniper",
         "hint3": "Psycho",
         "hint4": "History X",
-        "answer": "Films commençant par American"
+        "answer": "American ___"
     },
     {
         "hint1": "Johnny English",
@@ -347,13 +347,13 @@ var data = [
         "hint4": "Shere Khan",
         "answer": "Tigre"
     },
-    {
+    /*{// A REVOIR
         "hint1": "Le radeau de la Méduse",
         "hint2": "La Vénus de Milo",
         "hint3": "La Liberté guidant le peuple",
         "hint4": "Les taureaux ailés",
         "answer": "Oeuvres au Louvre"
-    },
+    },*/
     {
         "hint1": "Abel",
         "hint2": "Fredo",
@@ -361,13 +361,13 @@ var data = [
         "hint4": "Mufasa",
         "answer": "Fratricide"
     },
-    {
+    /*{// A REVOIR
         "hint1": "Paris",
         "hint2": "Istanbul",
         "hint3": "Londres",
         "hint4": "Venise",
         "answer": "Lieux dans Assasin's Creed"
-    },
+    },*/
     {
         "hint1": "Bordeaux",
         "hint2": "Grenoble",
@@ -382,13 +382,13 @@ var data = [
         "hint4": "Discord",
         "answer": "Séminaires au vert"
     },
-    {
+    /*{// A REVOIR
         "hint1": "Alessandro",
         "hint2": "Isaac",
         "hint3": "André-Marie",
         "hint4": "Charles-Augustin",
         "answer": "Prénoms de gens qui ont donnés leur noms à des unités"
-    },
+    },*/
     {
         "hint1": "OCaml",
         "hint2": "Pharo",
@@ -396,22 +396,29 @@ var data = [
         "hint4": "SOFA",
         "answer": "Logiciels développés par Inria"
     },
-    {
+    /*{// A REVOIR
         "hint1": "Prophase",
         "hint2": "Métaphase",
         "hint3": "Anaphase",
         "hint4": "Télophase ",
         "answer": "Mitose"
-    },
-    {
+    },*/
+    /*{// A REVOIR
         "hint1": "Adénine",
         "hint2": "Cytosine",
         "hint3": "Guanine",
         "hint4": "Thymine ",
-        "answer": "Basé nucléique de l'ADN"
+        "answer": "Bases nucléiques de l'ADN"
+    },*/
+    {
+        "hint1": "Oignon",
+        "hint2": "Bébé",
+        "hint3": "Atmosphère",
+        "hint4": "Peau",
+        "answer": "Couches"
     }
-    // nombres de papiers à IEEE VR chaque année ? (avec le 5 de Ferran) ??
-    // 
 ];
 
 remaining.innerHTML = data.length + " questions";
+
+// question exemple sur la culture des patates
