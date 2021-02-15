@@ -69,10 +69,33 @@ function ShowAnswerClicked() {
 
 function NextQuestionClicked() {
 
-    // random between 0 and data.lenght, then remove the selected item
+    // random between 0 and data.length, then remove the selected item
     var remainingQuestions = data.length;
 
-    if (remainingQuestions == 0) {
+    if(remainingQuestions == maxQuestions){// first question : example
+        var question = data.splice(0, 1)[0];
+
+        hint1.style.visibility = "hidden";
+        hint2.style.visibility = "hidden";
+        hint3.style.visibility = "hidden";
+        hint4.style.visibility = "hidden";
+        answer.style.visibility = "hidden";
+
+        hint1.innerHTML = question.hint1;
+        hint2.innerHTML = question.hint2;
+        hint3.innerHTML = question.hint3;
+        hint4.innerHTML = question.hint4;
+
+        answer.innerHTML = question.answer;
+
+        progress.style.width = "0%";
+
+        points.innerHTML = "";
+
+        nextQuestionButton.disabled = true;
+        startChronoButton.disabled = false;
+    }
+    else if (remainingQuestions == 0) {// end of quiz, no question
         hint1.style.visibility = "hidden";
         hint2.style.visibility = "hidden";
         hint3.style.visibility = "hidden";
@@ -127,7 +150,6 @@ function NextQuestionClicked() {
     remaining.innerHTML = remainingQuestions + " questions";
 }
 
-
 // DOM variables
 var body = document.getElementById("body");
 
@@ -179,13 +201,13 @@ var firstTeam = true;
 
 // data
 var data = [
-    /*{
+    {// EXAMPLE
         "hint1": "Fer à cheval",
-        "hint2": "Patte de lapin",
-        "hint3": "Trèfle",
+        "hint2": "Trèfle à 4 feuilles",
+        "hint3": "Patte de lapin",
         "hint4": "777",
         "answer": "Chance"
-    },*/
+    },
     {
         "hint1": "Cidre",
         "hint2": "Celtique",
@@ -200,13 +222,6 @@ var data = [
         "hint4": "Autonomie",
         "answer": "Valeurs de l'équipe Hybride (parmis 7)"
     },
-    /*{
-        "hint1": "Karadoc",
-        "hint2": "Perceval",
-        "hint3": "Guenièvre",
-        "hint4": "Arthur",
-        "answer": "Kammelott/Légende du roi Arthur"
-    },*/
     {
         "hint1": "Amérique",
         "hint2": "Tibet",
@@ -214,35 +229,21 @@ var data = [
         "hint4": "Lune",
         "answer": "Les aventures de Tintin"
     },
-    /*{// A REVOIR
+    {
         "hint1": "Resurrection",
         "hint2": "Revolutions",
         "hint3": "Reloaded",
         "hint4": "-",
         "answer": "Matrix"
-    },*/
-    /*{// A REVOIR
+    },
+    {
         "hint1": "The Last of Us Part II",
         "hint2": "The Legend of Zelda: Breath of the Wild",
         "hint3": "God of War",
         "hint4": "Sekiro: Shadows Die Twice",
         "answer": "The Game Awards winners - GOTY"
-    },*/
-    /*{// A REVOIR
-        "hint1": "Fish",
-        "hint2": "Wisp",
-        "hint3": "Bulky",
-        "hint4": "Radio",
-        "answer": "Official Inktober 2020 prompt list"
-    },*/
-    /*{
-        "hint1": "Vue",
-        "hint2": "Toucher",
-        "hint3": "Goût",
-        "hint4": "Odorat",
-        "answer": "Sens"
-    },*/
-    {// A REVOIR
+    },
+    {
         "hint1": "Parasite",
         "hint2": "Green Book : Sur les routes du sud",
         "hint3": "La Forme de l'eau",
@@ -256,20 +257,6 @@ var data = [
         "hint4": "de terre",
         "answer": "Pomme"
     },
-    /*{// A REVOIR
-        "hint1": "Europe",
-        "hint2": "Io",
-        "hint3": "Ganymède",
-        "hint4": "Callisto",
-        "answer": "Lunes de Jupiter"
-    },*/
-    /*{// A REVOIR
-        "hint1": "79",
-        "hint2": "83",
-        "hint3": "89",
-        "hint4": "97",
-        "answer": "Derniers nombres premiers avant 100"
-    },*/
     {
         "hint1": "Tokyo",
         "hint2": "Rio de Janeiro",
@@ -298,13 +285,6 @@ var data = [
         "hint4": "Amy Winehouse",
         "answer": "Club des 27"
     },
-    /*{// A REVOIR
-        "hint1": "Rouge et Bleu",
-        "hint2": "Or et Argent",
-        "hint3": "Rubis et Saphir",
-        "hint4": "Diamant et Perle",
-        "answer": "Pokémon"
-    },*/
     {
         "hint1": "vais",
         "hint2": "regard",
@@ -347,13 +327,13 @@ var data = [
         "hint4": "Shere Khan",
         "answer": "Tigre"
     },
-    /*{// A REVOIR
+    {
         "hint1": "Le radeau de la Méduse",
         "hint2": "La Vénus de Milo",
         "hint3": "La Liberté guidant le peuple",
         "hint4": "Les taureaux ailés",
         "answer": "Oeuvres au Louvre"
-    },*/
+    },
     {
         "hint1": "Abel",
         "hint2": "Fredo",
@@ -361,13 +341,6 @@ var data = [
         "hint4": "Mufasa",
         "answer": "Fratricide"
     },
-    /*{// A REVOIR
-        "hint1": "Paris",
-        "hint2": "Istanbul",
-        "hint3": "Londres",
-        "hint4": "Venise",
-        "answer": "Lieux dans Assasin's Creed"
-    },*/
     {
         "hint1": "Bordeaux",
         "hint2": "Grenoble",
@@ -382,13 +355,13 @@ var data = [
         "hint4": "Discord",
         "answer": "Séminaires au vert"
     },
-    /*{// A REVOIR
+    {
         "hint1": "Alessandro",
         "hint2": "Isaac",
         "hint3": "André-Marie",
         "hint4": "Charles-Augustin",
         "answer": "Prénoms de gens qui ont donnés leur noms à des unités"
-    },*/
+    },
     {
         "hint1": "OCaml",
         "hint2": "Pharo",
@@ -396,29 +369,29 @@ var data = [
         "hint4": "SOFA",
         "answer": "Logiciels développés par Inria"
     },
-    /*{// A REVOIR
-        "hint1": "Prophase",
-        "hint2": "Métaphase",
-        "hint3": "Anaphase",
-        "hint4": "Télophase ",
-        "answer": "Mitose"
-    },*/
-    /*{// A REVOIR
-        "hint1": "Adénine",
-        "hint2": "Cytosine",
-        "hint3": "Guanine",
-        "hint4": "Thymine ",
-        "answer": "Bases nucléiques de l'ADN"
-    },*/
     {
         "hint1": "Oignon",
-        "hint2": "Bébé",
-        "hint3": "Atmosphère",
+        "hint2": "Atmosphère",
+        "hint3": "Bébé",
         "hint4": "Peau",
         "answer": "Couches"
+    },
+    {
+        "hint1": "Patate",
+        "hint2": "Brique",
+        "hint3": "Oseille",
+        "hint4": "Blé",
+        "answer": "Argent"
+    },
+    {
+        "hint1": "Bom Bahia",
+        "hint2": "Constantinople",
+        "hint3": "Petrograd",
+        "hint4": "Nouvelle Amsterdam",
+        "answer": "Anciens noms de villes"
     }
 ];
 
-remaining.innerHTML = data.length + " questions";
+var maxQuestions = data.length;
 
-// question exemple sur la culture des patates
+remaining.innerHTML = data.length + " questions";
