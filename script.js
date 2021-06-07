@@ -223,6 +223,27 @@ var data = [
         "answer": "Spécialités normandes"
     },
     {
+        "hint1": "Alexandrie",
+        "hint2": "Rhodes",
+        "hint3": "Olympie",
+        "hint4": "Khéops",
+        "answer": "Lieux des merveilles du monde antique"
+    },
+    {
+        "hint1": "Indonesia",
+        "hint2": "Mexique",
+        "hint3": "Soudan",
+        "hint4": "Egypte",
+        "answer": "Pays avec des pyramides"
+    },
+    {
+        "hint1": "Jospin",
+        "hint2": "Astier",
+        "hint3": "Richie",
+        "hint4": "Messi",
+        "answer": "Lionel ___"
+    },
+    {
         "hint1": "Api",
         "hint2": "amour",
         "hint3": "Adam",
@@ -230,33 +251,96 @@ var data = [
         "answer": "Pomme"
     },
     {
-        "hint1": "vais",
-        "hint2": "regard",
-        "hint3": "lieu",
-        "hint4": "frère",
-        "answer": "Beau___"
+        "hint1": "Zagreus",
+        "hint2": "Persée",
+        "hint3": "Thésée",
+        "hint4": "Héraclès",
+        "answer": "Fils de dieux grec"
     },
     {
-        "hint1": "Henry",
-        "hint2": "Roland",
-        "hint3": "Gaugry",
-        "hint4": "Ardisson",
-        "answer": "Thierry ___"
+        "hint1": "flexe",
+        "hint2": "férence",
+        "hint3": "cision",
+        "hint4": "spect",
+        "answer": "Circon_"
     },
     {
-        "hint1": "Hallyday",
-        "hint2": "Bowie",
-        "hint3": "Lynch",
-        "hint4": "Guetta",
-        "answer": "David ___"
+        "hint1": "Kaufman",
+        "hint2": "Risoli",
+        "hint3": "De Villiers",
+        "hint4": "Katerine",
+        "answer": "Philippe ___"
     },
     {
-        "hint1": "Pie",
-        "hint2": "Sniper",
-        "hint3": "Psycho",
-        "hint4": "History X",
-        "answer": "American ___"
-    }
+        "hint1": "François",
+        "hint2": "Philippe",
+        "hint3": "Henri",
+        "hint4": "Louis",
+        "answer": "Prénoms royaux"
+    },
+    {
+        "hint1": "Bienveance",
+        "hint2": "Transparence",
+        "hint3": "Solidarité",
+        "hint4": "Autonomie",
+        "answer": "Valeurs de l'équipe Hybride (parmis 7)"
+    },
+    {
+        "hint1": "en Hispanie",
+        "hint2": "chez les Bretons",
+        "hint3": "en Corse",
+        "hint4": "chez les Pictess",
+        "answer": "Astérix _"
+    },
+    {
+        "hint1": "-",
+        "hint2": "Les couloirs du temps",
+        "hint3": "La Révolution",
+        "hint4": "en Amérique",
+        "answer": "Films Alien"
+    },
+    {
+        "hint1": "le huitième passager",
+        "hint2": "le retour",
+        "hint3": "3",
+        "hint4": "la résurrection",
+        "answer": "Films Les Visiteurs"
+    },
+    {
+        "hint1": "Apocalypse",
+        "hint2": "Extinction",
+        "hint3": "Afterlife",
+        "hint4": "Retribution",
+        "answer": "Films Resident Evil"
+    },
+    {
+        "hint1": "Fedora",
+        "hint2": "Mint",
+        "hint3": "Elementary",
+        "hint4": "Debian",
+        "answer": "Distribution Linux"
+    },
+    {
+        "hint1": "Hartnell",
+        "hint2": "Smith",
+        "hint3": "Baker",
+        "hint4": "Tennant",
+        "answer": "Docteur Who"
+    },
+    {
+        "hint1": "Indonésie",
+        "hint2": "Etats-Unis",
+        "hint3": "Inde",
+        "hint4": "Chine",
+        "answer": "Pays les plus peuplés"
+    },
+    {
+        "hint1": "Un marteau et une plume",
+        "hint2": "6 drapeaux des USA",
+        "hint3": "Deux balles de Golf",
+        "hint4": "Empruntes de pas",
+        "answer": "Objets sur la Lune"
+    },
 
     /*
     {
