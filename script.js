@@ -72,7 +72,7 @@ function NextQuestionClicked() {
     // random between 0 and data.length, then remove the selected item
     var remainingQuestions = data.length;
 
-    if(remainingQuestions == maxQuestions){// first question : example
+    if (remainingQuestions == maxQuestions) {// first question : example
         var question = data.splice(0, 1)[0];
 
         hint1.style.visibility = "hidden";
@@ -208,6 +208,57 @@ var data = [
         "hint4": "777",
         "answer": "Chance"
     },
+    {
+        "hint1": "Dionysos",
+        "hint2": "Myriads",
+        "hint3": "Dyliss",
+        "hint4": "Hybrid",
+        "answer": "Équipes-projets Inria Rennes"
+    },
+    {
+        "hint1": "Cidre",
+        "hint2": "Camembert",
+        "hint3": "Calvados",
+        "hint4": "Teurgoule",
+        "answer": "Spécialités normandes"
+    },
+    {
+        "hint1": "Api",
+        "hint2": "amour",
+        "hint3": "Adam",
+        "hint4": "de terre",
+        "answer": "Pomme"
+    },
+    {
+        "hint1": "vais",
+        "hint2": "regard",
+        "hint3": "lieu",
+        "hint4": "frère",
+        "answer": "Beau___"
+    },
+    {
+        "hint1": "Henry",
+        "hint2": "Roland",
+        "hint3": "Gaugry",
+        "hint4": "Ardisson",
+        "answer": "Thierry ___"
+    },
+    {
+        "hint1": "Hallyday",
+        "hint2": "Bowie",
+        "hint3": "Lynch",
+        "hint4": "Guetta",
+        "answer": "David ___"
+    },
+    {
+        "hint1": "Pie",
+        "hint2": "Sniper",
+        "hint3": "Psycho",
+        "hint4": "History X",
+        "answer": "American ___"
+    }
+
+    /*
     {
         "hint1": "Cidre",
         "hint2": "Celtique",
@@ -390,6 +441,7 @@ var data = [
         "hint4": "Nouvelle Amsterdam",
         "answer": "Anciens noms de villes"
     }
+    */
 ];
 
 var maxQuestions = data.length;
