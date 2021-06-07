@@ -208,6 +208,7 @@ var data = [
         "hint4": "777",
         "answer": "Chance"
     },
+
     {
         "hint1": "Dionysos",
         "hint2": "Myriads",
@@ -230,7 +231,7 @@ var data = [
         "answer": "Lieux des merveilles du monde antique"
     },
     {
-        "hint1": "Indonesia",
+        "hint1": "Indonésie",
         "hint2": "Mexique",
         "hint3": "Soudan",
         "hint4": "Egypte",
@@ -283,13 +284,13 @@ var data = [
         "hint2": "Transparence",
         "hint3": "Solidarité",
         "hint4": "Autonomie",
-        "answer": "Valeurs de l'équipe Hybride (parmis 7)"
+        "answer": "Valeurs de l'équipe Hybrid (parmis 7)"
     },
     {
         "hint1": "en Hispanie",
         "hint2": "chez les Bretons",
         "hint3": "en Corse",
-        "hint4": "chez les Pictess",
+        "hint4": "chez les Pictes",
         "answer": "Astérix _"
     },
     {
@@ -297,14 +298,14 @@ var data = [
         "hint2": "Les couloirs du temps",
         "hint3": "La Révolution",
         "hint4": "en Amérique",
-        "answer": "Films Alien"
+        "answer": "Films Les Visiteurs"
     },
     {
         "hint1": "le huitième passager",
         "hint2": "le retour",
         "hint3": "3",
         "hint4": "la résurrection",
-        "answer": "Films Les Visiteurs"
+        "answer": "Films Alien"
     },
     {
         "hint1": "Apocalypse",
@@ -341,6 +342,13 @@ var data = [
         "hint4": "Empruntes de pas",
         "answer": "Objets sur la Lune"
     },
+    {
+        "hint1": "Braeburn",
+        "hint2": "Jubilé",
+        "hint3": "Tentation",
+        "hint4": "Reinette",
+        "answer": "Variétés de pomme"
+    },
 
     /*
     {
@@ -355,7 +363,7 @@ var data = [
         "hint2": "Transparence",
         "hint3": "Solidarité",
         "hint4": "Autonomie",
-        "answer": "Valeurs de l'équipe Hybride (parmis 7)"
+        "answer": "Valeurs de l'équipe Hybrid (parmis 7)"
     },
     {
         "hint1": "Amérique",
